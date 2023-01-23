@@ -9,15 +9,19 @@ body {
 header {
     display: flex;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin: -15px;
+    padding-top: 15px;
 }
 
 nav {
-    width: 420px;
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+}
+
+a {
+    padding: 15px;
 }
 
 h1 {
@@ -30,6 +34,12 @@ h1 {
     background-color: #1f2937;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 h2 {
     font-size: 36px;
     font-weight: 1000;
@@ -40,15 +50,14 @@ h2 {
 .figures {
     flex: 1;
     display: flex;
-    justify-content: center;
-    min-width: 800px;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
 .figures img {
     border-radius: 4px;
-    flex: 1;
-    width: 150px;
+    max-width: 200px;
+    display: flex;
     margin: 0;
 }
 
@@ -75,10 +84,12 @@ button {
 }
 
 .call {
-    margin: 50px 25px;
+    width: 50%;
+    margin: 100px auto;
     border-radius: 4px;
     display: flex;
-    justify-content: space-evenly;
+    flex: 1;
+    justify-content: center;
     align-items: center;
 }
 
