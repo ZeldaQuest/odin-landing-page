@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
 body {
-    font-family: roboto, sans-serif;
+    font-family: Roboto, sans-serif;
+    margin: 0;
 }
+
 header {
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: space-evenly;
     align-items: center;
+    margin: -15px;
+}
+
+nav {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
 }
 
 h1 {
@@ -13,14 +26,35 @@ h1 {
     color: #f9faf8;
 }
 
+.dark, footer {
+    background-color: #1f2937;
+}
+
 h2 {
     font-size: 36px;
     font-weight: 1000;
     color: #1f2937;
+    text-align: center;
 }
 
-.dark, footer {
-    background-color: #1f2937;
+.figures {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 800px;
+    flex-wrap: wrap;
+}
+
+.figures img {
+    border-radius: 4px;
+    flex: 1;
+    width: 150px;
+    margin: 0;
+}
+
+figcaption {
+    width: 150px;
+    text-align: center;
 }
 
 button, .call {
@@ -29,6 +63,7 @@ button, .call {
 
 button {
     color: #e5e7eb;
+    border-radius: 4px;
     border: 1px solid #e5e7eb;
 }
 
@@ -39,9 +74,21 @@ button {
     color: #1f2937;
 }
 
+.call {
+    margin: 50px 25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.call_text {
+    padding: 40px 30px
+}
+
 img {
     height: auto;
-    width: 200px;
+    width: 500px;
 }
 
 .logo {
@@ -52,4 +99,17 @@ img {
 a, p {
     font-size: 18px;
     color: #e5e7eb;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    color: #e5e7eb;
+    font-size: 24px;
+}
+
+footer {
+    color: #f9faf8;
+    padding: 40px;
+    text-align: center;
 }
