@@ -1,3 +1,12 @@
+body {
+    font-family: roboto, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
     font-size: 48px;
     font-weight: 1000;
